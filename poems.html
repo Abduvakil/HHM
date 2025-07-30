@@ -59,6 +59,16 @@
             z-index: 1000;
             box-shadow: var(--shadow);
         }
+        .header::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: white;
+            width: 100%;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+        }
 
         .nav-container {
             max-width: 1200px;
@@ -70,12 +80,21 @@
             height: 45px;
         }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-        }
+         .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Bookman Old Style Cyr', serif;
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px 0; /* Add some padding */
+}
+.logo-img {
+    height: 40px; /* подбери по размеру */
+    width: auto;
+    border-radius: 6px; /* если нужно скругление */
+}
 
         .nav-menu {
             display: flex;
@@ -434,7 +453,10 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <a href="index.html" class="logo">Ҳоҷӣ Ҳусайн Мӯсозода</a>
+            <a href="index.html" class="logo">
+    <img src="img/logo2.png" alt="Логотип" class="logo-img">
+    Ҳоҷӣ Ҳусайн Мӯсозода
+</a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Асосӣ</a></li>
                 <li><a href="poems.html" class="nav-link active">Шеърҳо</a></li>
@@ -660,7 +682,8 @@ ${text}
                     const btnCategory = button.getAttribute('onclick').match(/'([^']+)'/)[1];
                     if (btnCategory === category) {
                         button.classList.add('active');
-                    } else {
+                    }
+                    else {
                         button.classList.remove('active');
                     }
                 });
