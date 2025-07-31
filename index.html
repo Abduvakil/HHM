@@ -171,14 +171,14 @@
         /* Photo Gallery Slider */
         .photo-slider {
             position: relative;
-            max-width: 600px;
+            max-width: 800px;
             margin: 40px auto;
             background: var(--white);
             border-radius: 15px;
             overflow: hidden;
             box-shadow: var(--shadow-hover);
             border: 3px solid var(--bg-cream);
-            height: 700px;
+            height: 535px;
         }
 
         .slider-container {
@@ -349,7 +349,7 @@
     overflow: hidden;
     width: 270px;
     max-width: 300px;
-    height: 380px;
+    height: 370px;
 }
 
 .bio-image img {
@@ -528,22 +528,21 @@
             transform: scale(1.05);
         }
 
-        /* Audio Section */
-        .audio-container {
+        /* Audio Grid */
+        .audio-grid {
             display: grid;
             gap: 25px;
         }
 
         .audio-card {
             background: var(--white);
-            border-radius: 10px;
-            padding: 14px;
+            border-radius: 15px;
+            padding: 25px;
             box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            gap: 12px;
             transition: all 0.3s ease;
             border: 2px solid var(--bg-cream);
+            position: relative;
+            overflow: hidden;
         }
 
         .audio-card:hover {
@@ -552,35 +551,45 @@
             border-color: var(--accent-gold);
         }
 
-        .audio-icon {
-            width: 38px;
-            height: 38px;
-            background: var(--bg-cream);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            color: var(--accent-gold);
-            cursor: pointer;
-        }
-
-        .audio-info {
-            flex: 1;
-        }
-
         .audio-title {
             font-family: 'Bookman Old Style Cyr', serif;
-            font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--accent-brown);
-    margin-bottom: 6px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--accent-brown);
+            margin-bottom: 8px;
         }
 
         .audio-controls {
             width: 100%;
-            margin-top: 10px;
-            display: none; /* Hide default controls */
+        }
+        
+        .action-buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            background: var(--accent-gold);
+            color: var(--white);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            width: 140px;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            background: var(--accent-brown);
+            transform: scale(1.05);
         }
 
         /* Footer */
@@ -731,6 +740,19 @@
             left: 100%;
         }
 
+        .audio-text-content {
+            display: none;
+            padding: 15px;
+            margin-top: 15px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
+
+        .audio-text-content.expanded {
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .hero {
                 height: auto;
@@ -831,6 +853,7 @@
                 <li><a href="#zindaginoma" class="nav-link">Зиндагинома</a></li>
                 <li><a href="#kitobho" class="nav-link">Китобҳо</a></li>
                 <li><a href="#sherho" class="nav-link">Шеъру ғазалҳо</a></li>
+                <li><a href="analysis.html" class="nav-link">Таҳлили шеърҳо</a></li>
                 <li><a href="#audio" class="nav-link">Сабти овозӣ</a></li>
                 <li><a href="#gallery" class="nav-link">Фотогалерея</a></li>
             </ul>
@@ -912,7 +935,7 @@
                 <!-- Карточка 1 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/book_gulchin_ashor.jpg" alt="Гулчини ашъор">
+                        <img src="img/img-galer6.JPG" alt="Гулчини ашъор">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Гулчини ашъор</h3>
@@ -923,7 +946,7 @@
                 <!-- Карточка 2 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/img-2.jpg" alt="Ҳикматистон">
+                        <img src="img/img-galer7.jpg" alt="Ҳикматистон">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Ҳикматистон</h3>
@@ -934,7 +957,7 @@
                 <!-- Карточка 3 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/img-3.jpg" alt="Тоҷикистон – вориси Сомониён">
+                        <img src="img/img-galer8.JPG" alt="Тоҷикистон – вориси Сомониён">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Тоҷикистон – вориси Сомониён</h3>
@@ -945,7 +968,7 @@
                 <!-- Карточка 4 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/img-4.jpg" alt="Гавҳари имон мафурӯш">
+                        <img src="img/img-galer9.JPG" alt="Гавҳари имон мафурӯш">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Гавҳари имон мафурӯш</h3>
@@ -956,7 +979,7 @@
                 <!-- Карточка 5 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/img-5.jpg" alt="Бунёди оила дар ислом">
+                        <img src="img/img-galer10.JPG" alt="Бунёди оила дар ислом">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Бунёди оила дар ислом</h3>
@@ -967,7 +990,7 @@
                 <!-- Карточка 6 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/photo_2_2025-07-26_09-04-02.jpg" alt="Об асли мавҷудият">
+                        <img src="img/img-galer11.JPG" alt="Об асли мавҷудият">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Об асли мавҷудият</h3>
@@ -978,7 +1001,7 @@
                 <!-- Карточка 7 (новая) -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/photo_3_2025-07-26_09-04-02.jpg" alt="Дарсҳои иқтисодӣ">
+                        <img src="img/img-galer12.JPG" alt="Дарсҳои иқтисодӣ">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Дарсҳои иқтисодӣ</h3>
@@ -989,7 +1012,7 @@
                 <!-- Карточка 8 (новая) -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/photo_5_2025-07-26_09-04-02.jpg" alt="Тарбияи фарзанд">
+                        <img src="img/img-galer13.JPG" alt="Тарбияи фарзанд">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Тарбияи фарзанд</h3>
@@ -1012,24 +1035,99 @@
             <h2 class="section-title">Шеъру ғазалҳо</h2>
             <div class="poems-container">
                 <div class="poem-card">
-                    <h3 class="poem-title">Номи шеър</h3>
+                    <h3 class="poem-title">КИШВАРИ НУРУ САОДАТ,  ТОҶИКИСТОН, ЗИНДА БОД! </h3>
                     <div class="poem-text">
-                        Дар ин ҷо матни шеър ҷой дорад<br>
-                        Ки дилҳоро ба ваҷд меорад<br>
-                        Калимаҳои зебо ва пурмаъно<br>
-                        Рӯҳи инсонро месозад
+                        Кишвари нуру саодат, Тоҷикистон, зинда бод!<br> 
+                        Пешвои боадолат, зеби даврон, зинда бод! <br>
+                        Ин ҳама ободиҳо аз баҳри халқу миллат аст, <br>
+                        Тоҷикистон, доимо бо нури Раҳмон, зинда бод!<br> 
+                        Нури истиқлоли давлат ваҳдати миллат бувад, <br>
+                        Дар садоқат бар Ватан Вахшу Бадахшон, зинда бод! <br>
+                        Ваҳдати мо гул кунад аз рамзи Кӯлобу Ҳисор, <br>
+                        Дар табиат гулшану Рашту Зарафшон, зинда бод! <br>
+                        Гардад обод ин Ватан - рушди саноат дар назар, <br>
+                        Дар муҳаббат ҳам рафоқат Суғду Хатлон, зинда бод! <br>
+                        Асли давлатдории мо давлати Сомониён, <br>
+                        Ифтихори миллати, мо даври Сомон, зинда бод! 
+
                     </div>
                     <button class="share-btn" onclick="sharePoem(this)">
                         <i class="fas fa-share"></i> Мубодила кардан
                     </button>
                 </div>
                 <div class="poem-card">
-                    <h3 class="poem-title">Газали дигар</h3>
+                    <h3 class="poem-title">АДЛИ ПЕШВОИ ЗАМОН ШУКРОНАИ ДАВРОНИ МО </h3>
                     <div class="poem-text">
-                        Шеъри дигар дар ин ҷо<br>
-                        Бо калимаҳои зебо<br>
-                        Ҳиссиёти амиқро<br>
-                        Ифода мекунад
+                        Адли Пешвои замон шукронаи даврони мо, <br>
+                        Шукри шоҳи додгар Эмомалӣ Раҳмони мо. <br>
+                        Шукри истиқлоли давлат, Парчами миллат баланд, <br>
+                        Ифтихори миллату Исмоили Сомони мо. <br>
+                        Шукри оромии миллат, адли Сарвар дар назар,<br> 
+                        Дар масири зиндагӣ шукронаи Раҳмони мо. <br>
+                        Худ навозишҳо кунад аз баҳри муҳтоҷу ятим, <br>
+                        Шукри раҳми Пешво, шукронаи даврони мо. <br>
+                        Марзу буми Тоҷикистон, Рамзи давлат ҳам Нишон,<br> 
+                        Хоки поки Тоҷикистон сурмаи чашмони мо. <br>
+                        Шукри халқи Тоҷикистон, шукри хоки ин Ватан,<br> 
+                        Шукри адли Пешво Эмомалӣ Раҳмони мо. 
+
+                    </div>
+                    <button class="share-btn" onclick="sharePoem(this)">
+                        <i class="fas fa-share"></i> Мубодила кардан
+                    </button>
+                </div>
+                <div class="poem-card">
+                    <h3 class="poem-title">ТИНАТИ ГУЛҲОИ РАНГИН ДАР ГУЛОБ АФТОДААСТ </h3>
+                    <div class="poem-text">
+                        Тинати гулҳои рангин дар гулоб афтодааст,<br>
+                        Раҳмати дилҳои сангин бениқоб афтодааст. <br>
+                        Мушку анбар гар ту дидӣ дар гулобе ё ниқоб, <br>
+                        Қимати гулҳои мушкин беҳисоб афтодааст. <br>
+                        Боданӯшӣ, бангу афюн сад ҷунун орад ба ту, <br>
+                        Иллати ин номи нангин дар шароб афтодааст. <br>
+                        Лаззати об ар бидонӣ, шӯру талхӣ рамзи баҳр, <br>
+                        Қисмати дарёи ширин аз саҳоб афтодааст. <br>
+                        Бо шаҳомат чуғзу лочин дӯрӣ ҷӯяд худ ба худ, <br>
+                        Ғафлати авлоди шоҳин чун сароб афтодааст. <br>
+                        Номаи девон чу омад нақши дунёро бубин, <br>
+                        Давлати дунёи рангин дар китоб афтодааст. <br>
+                        Вақти оромӣ ба нармӣ ту дуо кун, эй Ҳусайн, <br>
+                        Фурсати наҷвои омин мустаҷоб афтодааст. 
+
+                    </div>
+                    <button class="share-btn" onclick="sharePoem(this)">
+                        <i class="fas fa-share"></i> Мубодила кардан
+                    </button>
+                </div>
+                <div class="poem-card">
+                    <h3 class="poem-title">ЭЪЛОМИЯИ ХУҶАНД </h3>
+                    <div class="poem-text">
+                        Қиссаи таърихи омад баҳри миллат дарХуҷанд,<br>
+                        Иди Наврӯз бо бузургон зикри он шуд дилписанд.<br>
+                        Ҷашни Наврӯз қутбнамоу Тоҷикистон муқтадо,<br>
+                        Пешвои миллати мо бо садоқат раҳнамо.<br>
+                        Раҳбари қирғизу узбек Содиру ҳам Мирзиё,<br>
+                        Миизбон олимақом Эмомалӣ Раҳмони мо.<br>
+                        Сулҳу дӯсти байни се халқ муҷдаҳо бар мо расид,<br>
+                        Ҷовидон Эъломия бар мардуми дунё расид.<br>
+                        Дар Хуҷанд Эъломия имзо бишуд дар иттиҳод,<br>
+                        Халқ бигуфто ваҳдати мо бо муҳаббат зинда бод!<br>
+                        Раҳбари се мамлакат болои сар парчам буд,<br>
+                        Шуд муайян бо адолат бе хато хатти ҳудуд.<br>
+                        Баҳри миллат ин санадҳо армуғони бо бақо,<br>
+                        Дар Хуҷанд имзо бикарданд дӯстони бо вафо.<br>
+                        Тоҷику ӯзбеку қирғиз чун бародар дар яқин,<br>
+                        Роҳи дӯстиро бидонад ҳар,ки бошад нек бин.<br>
+                        Қалъаи шаҳри Хуҷанд тобанда шуд чун офтоб,<br>
+                        Нури имзо васфи он поянда монад дар китод.<br>
+                        Ҷашни Наврӯз бо сафо машҳӯр гашта дар ҷаҳон,<br>
+                        Дар Хуҷанди бостон Эъломия шуд ҷовидон.<br>
+                        Аҳду паймону садоқат дар миёни дӯстон,<br>
+                        То абад поянда бошад ҳамчу роҳи Каҳкашон.<br>
+                        Ту таманно кун Ҳусайно баҳри мардум иттиҳод,<br>
+                        Рамзи ободӣ расонад халқи моро бар мурод.
+
+
                     </div>
                     <button class="share-btn" onclick="sharePoem(this)">
                         <i class="fas fa-share"></i> Мубодила кардан
@@ -1048,56 +1146,66 @@
         <!-- Audio Section -->
         <section id="audio" class="section fade-in">
             <h2 class="section-title">Сабти овози ғазалҳо</h2>
-            <div class="audio-container">
+            <div class="audio-grid">
                 <div class="audio-card">
-                    <div class="audio-icon" onclick="toggleAudio(this)" data-audio-id="audio1">
-                        <i class="fas fa-play"></i>
+                    <h3 class="audio-title">Чурабек Набиёв</h3>
+                    <audio controls class="audio-controls" src="audio/01. Чурабек Набиёв.mp3"></audio>
+                    <div class="action-buttons">
+                        <a href="audio/01. Чурабек Набиёв.mp3" download class="action-btn">
+                            <i class="fas fa-download"></i> Боргирӣ
+                        </a>
+                        <button class="action-btn" onclick="toggleAudioText(this)">
+                            <i class="fas fa-file-alt"></i> Матни пурра
+                        </button>
                     </div>
-                    <div class="audio-info">
-                        <h3 class="audio-title">Чурабек Набиёв</h3>
-                        <audio id="audio1" class="audio-controls" src="audio/01. Чурабек Набиёв.mp3"></audio>
+                    <div class="audio-text-content">
+                        <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                     </div>
-                    <a href="audio/01. Чурабек Набиёв.mp3" download class="action-btn secondary">
-                        <i class="fas fa-download"></i>
-                    </a>
-                </div>
-
-                <div class="audio-card">
-                    <div class="audio-icon" onclick="toggleAudio(this)" data-audio-id="audio2">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="audio-info">
-                        <h3 class="audio-title">Пешво</h3>
-                        <audio id="audio2" class="audio-controls" src="audio/23 Пешво Hasanako.mp3"></audio>
-                    </div>
-                    <a href="audio/23 Пешво Hasanako.mp3" download class="action-btn secondary">
-                        <i class="fas fa-download"></i>
-                    </a>
-                </div>
-
-                <div class="audio-card">
-                    <div class="audio-icon" onclick="toggleAudio(this)" data-audio-id="audio3">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="audio-info">
-                        <h3 class="audio-title">Гуфтам ватан</h3>
-                        <audio id="audio3" class="audio-controls" src="audio/Ғолибҷон Гуфтам ватан .mp3"></audio>
-                    </div>
-                    <a href="audio/Ғолибҷон Гуфтам ватан .mp3" download class="action-btn secondary">
-                        <i class="fas fa-download"></i>
-                    </a>
                 </div>
                 <div class="audio-card">
-                    <div class="audio-icon" onclick="toggleAudio(this)" data-audio-id="audio4">
-                        <i class="fas fa-play"></i>
+                    <h3 class="audio-title">Пешво</h3>
+                    <audio controls class="audio-controls" src="audio/23 Пешво Hasanako.mp3"></audio>
+                    <div class="action-buttons">
+                        <a href="audio/23 Пешво Hasanako.mp3" download class="action-btn">
+                            <i class="fas fa-download"></i> Боргирӣ
+                        </a>
+                        <button class="action-btn" onclick="toggleAudioText(this)">
+                            <i class="fas fa-file-alt"></i> Матни пурра
+                        </button>
                     </div>
-                    <div class="audio-info">
-                        <h3 class="audio-title">Тоҷикистон</h3>
-                        <audio id="audio4" class="audio-controls" src="audio/TOJIKISTON_++_TTA_Выход_Stereo_Out_Выход_Stereo_Out.mp3"></audio>
+                    <div class="audio-text-content">
+                        <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                     </div>
-                    <a href="audio/TOJIKISTON_++_TTA_Выход_Stereo_Out_Выход_Stereo_Out.mp3" download class="action-btn secondary">
-                        <i class="fas fa-download"></i>
-                    </a>
+                </div>
+                <div class="audio-card">
+                    <h3 class="audio-title">Ғолибҷон - Гуфтам ватан</h3>
+                    <audio controls class="audio-controls" src="audio/Ғолибҷон Гуфтам ватан .mp3"></audio>
+                    <div class="action-buttons">
+                        <a href="audio/Ғолибҷон Гуфтам ватан .mp3" download class="action-btn">
+                            <i class="fas fa-download"></i> Боргирӣ
+                        </a>
+                        <button class="action-btn" onclick="toggleAudioText(this)">
+                            <i class="fas fa-file-alt"></i> Матни пурра
+                        </button>
+                    </div>
+                    <div class="audio-text-content">
+                        <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
+                    </div>
+                </div>
+                <div class="audio-card">
+                    <h3 class="audio-title">Тоҷикистон</h3>
+                    <audio controls class="audio-controls" src="audio/TOJIKISTON_++_TTA_Выход_Stereo_Out_Выход_Stereo_Out.mp3"></audio>
+                    <div class="action-buttons">
+                        <a href="audio/TOJIKISTON_++_TTA_Выход_Stereo_Out_Выход_Stereo_Out.mp3" download class="action-btn">
+                            <i class="fas fa-download"></i> Боргирӣ
+                        </a>
+                        <button class="action-btn" onclick="toggleAudioText(this)">
+                            <i class="fas fa-file-alt"></i> Матни пурра
+                        </button>
+                    </div>
+                    <div class="audio-text-content">
+                        <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
+                    </div>
                 </div>
             </div>
             <div class="nav-buttons">
@@ -1114,23 +1222,39 @@
         <div class="slider-container">
             <div class="slider-track" id="sliderTrack">
                 <div class="slide">
-                    <img src="img/img-1.jpg" alt="Акс аз вохӯрӣ">
+                    <img src="img/img-galer6.JPG" alt="Акс аз вохӯрӣ">
                     <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
                 </div>
                 <div class="slide">
-                    <img src="img/img-2.jpg" alt="Акс аз китобхона">
+                    <img src="img/img-galer7.JPG" alt="Акс аз китобхона">
                     <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
                 </div>
                 <div class="slide">
-                    <img src="img/img-3.jpg" alt="Акс аз сафар">
+                    <img src="img/img-galer8.JPG" alt="Акс аз сафар">
                     <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
                 </div>
                 <div class="slide">
-                    <img src="img/img-4.jpg" alt="Акс аз масҷид">
+                    <img src="img/img-galer9.JPG" alt="Акс аз масҷид">
                     <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
                 </div>
                 <div class="slide">
-                    <img src="img/img-5.jpg" alt="Акси портретӣ">
+                    <img src="img/img-galer10.JPG" alt="Акси портретӣ">
+                    <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
+                </div>
+                <div class="slide">
+                    <img src="img/img-galer11.JPG" alt="Акси портретӣ">
+                    <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
+                </div>
+                <div class="slide">
+                    <img src="img/img-galer12.JPG" alt="Акси портретӣ">
+                    <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
+                </div>
+                <div class="slide">
+                    <img src="img/img-galer13.JPG" alt="Акси портретӣ">
+                    <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
+                </div>
+                <div class="slide">
+                    <img src="img/img-galer14.JPG" alt="Акси портретӣ">
                     <div class="slide-caption">Ҳоҷӣ Ҳусайн Мӯсозода</div>
                 </div>
             </div>
@@ -1217,7 +1341,7 @@
 
         // Text toggle functionality
         function toggleText(button) {
-            const bioText = button.previousElementSibling; // .text-content
+            const bioText = document.getElementById('bioText'); // More specific selector
             const btnText = button.querySelector('.btn-text');
             const icon = button.querySelector('i');
 
@@ -1227,7 +1351,7 @@
             if (bioText.classList.contains('expanded')) {
                 btnText.textContent = 'Камтар нишон додан';
                 icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
             } else {
                 btnText.textContent = 'Муфассал';
                 icon.classList.remove('fa-chevron-up');
@@ -1261,35 +1385,10 @@
             navMenu.classList.toggle('active');
         });
         
-        // Audio Player
-        function toggleAudio(iconElement) {
-            const audioId = iconElement.getAttribute('data-audio-id');
-            const audio = document.getElementById(audioId);
-            const icon = iconElement.querySelector('i');
-
-            if (audio.paused) {
-                // Pause all other audios
-                document.querySelectorAll('.audio-controls').forEach(otherAudio => {
-                    if (otherAudio !== audio) {
-                        otherAudio.pause();
-                        const otherIcon = otherAudio.closest('.audio-card').querySelector('.audio-icon i');
-                        otherIcon.classList.remove('fa-pause');
-                        otherIcon.classList.add('fa-play');
-                    }
-                });
-                audio.play();
-                icon.classList.remove('fa-play');
-                icon.classList.add('fa-pause');
-            } else {
-                audio.pause();
-                icon.classList.remove('fa-pause');
-                icon.classList.add('fa-play');
-            }
-            
-            audio.onended = () => {
-                 icon.classList.remove('fa-pause');
-                 icon.classList.add('fa-play');
-            };
+        function toggleAudioText(button) {
+            const card = button.closest('.audio-card');
+            const textContent = card.querySelector('.audio-text-content');
+            textContent.classList.toggle('expanded');
         }
         
         // Share Poem

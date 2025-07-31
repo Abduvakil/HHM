@@ -215,6 +215,8 @@
         
         .action-buttons {
             margin-top: 15px;
+            display: flex;
+            gap: 10px;
         }
 
         .action-btn {
@@ -231,6 +233,8 @@
             gap: 5px;
             font-size: 0.9rem;
             text-decoration: none;
+            width: 140px;
+            justify-content: center;
         }
 
         .action-btn:hover {
@@ -326,6 +330,19 @@
             transform: translateY(-3px);
         }
 
+        .audio-text-content {
+            display: none;
+            padding: 15px;
+            margin-top: 15px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
+
+        .audio-text-content.expanded {
+            display: block;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-menu {
@@ -375,6 +392,7 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Асосӣ</a></li>
                 <li><a href="poems.html" class="nav-link">Шеърҳо</a></li>
+                <li><a href="analysis.html" class="nav-link">Таҳлили шеърҳо</a></li>
                 <li><a href="audio.html" class="nav-link active">Аудио</a></li>
                 <li><a href="books.html" class="nav-link">Китобҳо</a></li>
             </ul>
@@ -407,6 +425,12 @@
                     <a href="audio/01. Чурабек Набиёв.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи аудио дар ин ҷо.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -416,6 +440,12 @@
                     <a href="audio/23 Пешво Hasanako.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -425,6 +455,12 @@
                     <a href="audio/Ғолибҷон Гуфтам ватан .mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -434,6 +470,12 @@
                     <a href="audio/TOJIKISTON_++_TTA_Выход_Stereo_Out_Выход_Stereo_Out.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -443,6 +485,12 @@
                     <a href="audio/ТАЙЕР 6.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -452,6 +500,12 @@
                     <a href="audio/ТАЙЕР 7.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -461,6 +515,12 @@
                     <a href="audio/ТАЙЕР 8.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -470,6 +530,12 @@
                     <a href="audio/ТАЙЕР 9.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -479,6 +545,12 @@
                     <a href="audio/ТАЙЕР 10.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -488,6 +560,12 @@
                     <a href="audio/ТАЙЕР 11.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -497,6 +575,12 @@
                     <a href="audio/ТАЙЕР 12.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
             <div class="audio-card">
@@ -506,6 +590,12 @@
                     <a href="audio/ТАЙЕР 13.mp3" download class="action-btn">
                         <i class="fas fa-download"></i> Боргирӣ
                     </a>
+                    <button class="action-btn" onclick="toggleText(this)">
+                        <i class="fas fa-file-alt"></i> Матни пурра
+                    </button>
+                </div>
+                <div class="audio-text-content">
+                    <p>Матни пурраи шеър дар ин ҷо ҷойгир аст.</p>
                 </div>
             </div>
         </div>
@@ -568,6 +658,12 @@
                 this.classList.toggle('active');
                 navMenu.classList.toggle('active');
             });
+        }
+
+        function toggleText(button) {
+            const card = button.closest('.audio-card');
+            const textContent = card.querySelector('.audio-text-content');
+            textContent.classList.toggle('expanded');
         }
     </script>
 </body>
